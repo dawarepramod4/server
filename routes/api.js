@@ -5,7 +5,10 @@ const Question = require("../models/question");
 router.get("/question", async function (req, res) {
     try {
         const questions = await Question.find({});
-        const msg = { questions: questions, msg: "This is message that change is occured" };
+        const msg = {
+            questions: questions,
+            msg: "This is message that change is occured  to successfull build",
+        };
         res.json(msg);
     } catch (e) {
         res.status(500).json({ error: e.message });
