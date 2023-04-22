@@ -7,7 +7,7 @@ router.get("/question", async function (req, res) {
         const questions = await Question.find({});
         const msg = {
             questions: questions,
-            msg: "This is message that change is occured  to successfull build",
+            msg: "This is message that change",
         };
         res.json(msg);
     } catch (e) {
