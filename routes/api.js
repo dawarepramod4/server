@@ -9,7 +9,7 @@ router.get("/question", async function (req, res) {
             questions: questions,
             msg: "CREATED By: 1. Ayush Kumbhare, 2.Daware 3. Tanmay Joshi",
         };
-        res.json(msg);
+        /res.json(msg);
     } catch (e) {
         res.status(500).json({ error: e.message });
     }
