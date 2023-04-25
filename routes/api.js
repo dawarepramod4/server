@@ -7,7 +7,7 @@ router.get("/question", async function (req, res) {
         const questions = await Question.find({});
         const msg = {
             questions: questions,
-            msg: "This Our project",
+            msg: "This Ayush's project",
         };
         res.json(msg);
     } catch (e) {
