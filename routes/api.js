@@ -7,7 +7,7 @@ router.get("/question", async function (req, res) {
         const questions = await Question.find({});
         const msg = {
             questions: questions,
-            msg: "Successfully got the Questions!",
+            msg: "Successfully got all the Questions!",
         };
         res.json(msg);
     } catch (e) {
