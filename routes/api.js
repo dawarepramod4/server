@@ -7,7 +7,7 @@ router.get("/question", async function (req, res) {
         const questions = await Question.find({});
         const msg = {
             questions: questions,
-            msg: "CREATED By: 1. Ayush Kumbhare, 2.Daware 3. Tanmay Joshi",
+            msg: "Successfully got the Questions",
         };
         res.json(msg);
     } catch (e) {
